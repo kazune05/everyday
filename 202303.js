@@ -143,4 +143,22 @@ console.log("3");
 //2
 //3
 
+//0321
+//1.変数の型を判定する関数を作成してください。
+ function getType(variable){
+  return typeof variable;
+ }
+ console.log(getType("kazu")); //str
 
+ //2.配列の中から、指定された値を持つ要素のインデックスを取得する関数を作成してください。
+ function getindex(value,array){
+    for(let i=0; i < array.length; i++){
+      if( value === array[i]){
+        return i;
+      }
+    }
+        return -1;
+ }
+
+ const array = [1,5,7,25,35];
+ console.log(getindex(array,5)); //1
