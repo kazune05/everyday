@@ -162,3 +162,19 @@ console.log("3");
 
  const array = [1,5,7,25,35];
  console.log(getindex(array,5)); //1
+
+ //0323
+ //https://gist.github.com/kenmori/1961ce0140dc3307a0e641c8dde6701d
+ //1.const a = { a: 'a' }とconst b = { b: 'b' } をマージしたc を出力してください e.g{ a:'a', b:'b' }
+ const a = { a: 'a' };
+ const b = { b: 'b' } ;
+
+ const c = Object.assign({},a,b);
+// const c = e.g{ a:'a', b:'b' }
+console.log(c);
+
+
+//2.const arry = ['aa','bb','cc','dd','ee','ff','gg'];
+//のdd,ee,ffを新たな配列として返してください
+const arry = ['aa','bb','cc','dd','ee','ff','gg'];
+let newarr = arry.slice(-4,-1); //マイナスは後ろから数える
