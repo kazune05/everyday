@@ -178,3 +178,34 @@ console.log(c);
 //のdd,ee,ffを新たな配列として返してください
 const arry = ['aa','bb','cc','dd','ee','ff','gg'];
 let newarr = arry.slice(-4,-1); //マイナスは後ろから数える
+
+//0324
+//1. 配列
+// const array = ['a1','a2','a3','a4','a5']
+// の0〜2番目の要素をそれぞれ
+// red, green, yellow
+// に置き換えて配列にしてください。また実行した際の返り値を教えてください
+
+// const arr = ['a1','a2','a3','a4','a5'];
+// let arr2 = arr.replace(/'a1'/g,'red');
+// arr2 = arr.replace(/'a2'/g,'green');
+// arr2 = arr.replace(/'a3'/g,'yellow');
+// console.log(arr2);
+
+const array2 = ['a1','a2','a3','a4','a5'];
+array2.splice(0,2,'red','green','yellow');
+array2
+
+//2.配列['おはよう','こんにちは','おやすみなさい']の要素
+//がランダムに出力される関数を書いてください。
+//(配列に要素が追加される事を仮定してたものにしてください)
+
+const arr2 = ['おはよう','こんにちは','おやすみなさい'];
+get =arr2[Math.floor(Math.random() * arr2.length)];
+get;
+
+//3.Object.createで空のオブジェクトを作成し、
+//値が1のプロパティpを出力してください
+
+const obj = Object.create({},{p: {value:1}});
+obj.p;
