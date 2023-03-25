@@ -179,7 +179,7 @@ console.log(c);
 const arry = ['aa','bb','cc','dd','ee','ff','gg'];
 let newarr = arry.slice(-4,-1); //マイナスは後ろから数える
 
-//0324
+//0324 問15,18,19
 //1. 配列
 // const array = ['a1','a2','a3','a4','a5']
 // の0〜2番目の要素をそれぞれ
@@ -196,7 +196,7 @@ const array2 = ['a1','a2','a3','a4','a5'];
 array2.splice(0,2,'red','green','yellow');
 array2
 
-//2.配列['おはよう','こんにちは','おやすみなさい']の要素
+//2.配列['おはよう','こんにちは','おやすみなさい']の要素 
 //がランダムに出力される関数を書いてください。
 //(配列に要素が追加される事を仮定してたものにしてください)
 
@@ -209,3 +209,50 @@ get;
 
 const obj = Object.create({},{p: {value:1}});
 obj.p;
+
+//0325  問11,13,20
+// let arry =[
+//   {id:1,name:'morita'},
+//   {id:2,name:'kenji'},
+//   {id:4,name:'uro'},
+//   {id:3,name:'ken'}
+//   ];
+// をid番号が若い順にソートしたオブジェクトを含む配列を出力してください
+
+let arry3 =[
+  {id:1,name:'morita'},
+  {id:2,name:'kenji'},
+  {id:4,name:'uro'},
+  {id:3,name:'ken'}
+  ];
+
+arry3.sort(function(a,b){return a.id - b.id});
+console.log(arry3)
+
+//a, bの変数はデフォルトとしてaは5、bは7を持ち、aに1を代入してconsole出力してください。
+//const {a = 5 ,b = 7} = {a : 1}; 動く
+console.log(a,b);
+
+//next()を実行しただけ返り値が1増える関数を定義してください
+const counter = function(){
+  let count = 0 ;
+  return function(){
+    return (count += 1);
+  }
+};
+const next = counter();
+next();
+
+// コンストラクタWhoの初期化時に'morita'(String)を渡しインスタンスプロパティnameに代入、 インスタンスメソッド
+// getNameの返り値がWho.prototype.name値になるいわゆる「classのようなもの」を作成してください 
+// ※インスタンスメソッドはprototypeに代入してください
+
+function Who(name){
+  this.name = name;
+};
+Who.prototype.getName = function (){
+  console.log(this.name);
+} ;
+let name2 = new Who('morita');
+name2.getName();
+
