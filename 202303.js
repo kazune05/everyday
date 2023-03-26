@@ -256,3 +256,14 @@ Who.prototype.getName = function (){
 let name2 = new Who('morita');
 name2.getName();
 
+//0326
+//popアップ
+//ボタンのidがbtn,表示するテキストのidがtextのとき
+const text = document.getElementById('text');
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click',function(){
+  console.log(text.value);
+});
+
+//
