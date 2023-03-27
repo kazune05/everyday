@@ -268,7 +268,7 @@ btn.addEventListener('click',function(){
 
 //0327
 // 1. 引数：arrayOfPeople - 人の名前の配列 返り値： 与えられた配列の長さ
- function numberOfPeople(arrayOfPeople) {
+function numberOfPeople(arrayOfPeople) {
   return arrayOfPeople.length;
 }
 console.log(numberOfPeople(["Alex", "Non", "Keita"])); 
