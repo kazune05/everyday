@@ -281,3 +281,5 @@ console.log(result);
 //5文字目から末尾まで
 const result2 = comment.slice(5);
 console.log(result2);
+
+//
