@@ -283,3 +283,14 @@ const result2 = comment.slice(5);
 console.log(result2);
 
 //0328 
+//配列の一覧を表示する
+const number = [10,50,120,300,500];
+for(i = 0; i < number.length; i++){
+  console.log(number[i]);
+}
+
+//userの要素を一覧表示する
+const user = {name:"山田", age:25};
+for(const x in user){
+  console.log(user[x]);
+}
