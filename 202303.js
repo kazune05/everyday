@@ -294,3 +294,18 @@ const user = {name:"山田", age:25};
 for(const x in user){
   console.log(user[x]);
 }
+
+// 0330
+// 足し算
+let num1 = 20;
+let num2 = 30;
+let total = num1 + num2;
+console.log(total);
+
+//割り算
+let total2 = num1 / num2;
+console.log(total2);
+
+//掛け算
+let total3 = num1 * num2;
+console.log(total3);
