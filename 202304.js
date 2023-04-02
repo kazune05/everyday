@@ -14,3 +14,15 @@ for(let i = 1; i<100; i++){
         console.log(i);
     }
 };
+
+//0402
+//配列を全て合算した数
+//a=累積　b=処理する値
+
+const arr= [1, 54, 5, 11, 252, 34, 100, 25];
+const total = arr.reduce(
+    function(a,b){
+        return a+b;
+    }
+);
+console.log(total);
