@@ -26,3 +26,43 @@ const total = arr.reduce(
     }
 );
 console.log(total);
+
+//0403
+//2次元配列
+const number =[[10,20,30],[500,600,800]];
+console.log(number[0][2]);//30
+console.log(number[0][1]+number[1][0]);//520
+
+//for in
+const favorite = {
+    food : "ハンバーグ",
+    color:"水色",
+    number:7
+};
+
+for(const key in favorite){
+    console.log(key + ":"+favorite[key]); 
+}
+
+//円の面積
+//半径:radius 100のとき 面積:area
+function circle(radius){
+    return radius * radius * 3.14;
+}
+function circlearea(){
+    area = circle(100);
+    return area;
+}
+console.log(circlearea()+ "cm^2");
+
+//コンソールに"ABC"を表示
+func("ABC");
+function func(x){
+    console.log(x);
+}
+//変数yを戻り値として表示
+//func(100);
+function func(y){
+    return y;
+}
+console.log(func(10));
