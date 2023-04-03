@@ -60,8 +60,7 @@ func("ABC");
 function func(x){
     console.log(x);
 }
-//変数yを戻り値として表示
-//func(100);
+//
 function func(y){
     return y;
 }
