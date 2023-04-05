@@ -63,5 +63,41 @@ function func(x){
 //
 function func(y){
     return y;
-}
+};
 console.log(func(10));
+
+//0405 
+//数値変換
+const str = "500";
+const num = parseInt(str);
+console.log(num + 500); //1000
+
+const str2 = "3.14";
+const num2 = parseFloat(str2);
+console.log(num2 + 0.08);
+
+const str3 ="K";
+const num3 = parseInt(str3);
+if(isNaN(num3)){
+    console.log("失敗");
+}else{
+    console.log("成功");
+};
+
+//三角形の面積
+function trianglearea(bottom,height){
+    return bottom * height /2;
+};
+const area = trianglearea(30,50);
+console.log(area);//750
+
+//コンソールにABCを表示
+const f = function (x){
+    console.log(x);
+};
+f("ABC");
+
+//コンソールにこんにちわを表示
+(function(str4){
+    console.log(str4);
+}) ("こんにちわ"); 
