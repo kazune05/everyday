@@ -101,3 +101,48 @@ f("ABC");
 (function(str4){
     console.log(str4);
 }) ("こんにちわ"); 
+
+//0406
+//購入金額の10％がポイントとしてたまる
+//支払うときに購入金額以上のポイントがある場合はポイントから
+//ポイントが購入金額未満の場合はカードから
+let total2 =3000;
+let point = 0;
+let buy = [1200];
+
+for(let i =0; i < buy.length; i++){
+    if( point >= buy[i]){
+        point -= buy[i];
+        point = point + buy[i]*0.1;
+        total2 = total2 -buy[i] ;
+        console.log(total2);
+    }else{
+        total2 -= buy[i];
+        point = point+ buy[i]* 0.1;
+        total2 = total2+point;
+        console.log(total2);
+    }
+}
+
+// let total2 =3000;
+// let point = 0;
+// let buy = [300 , 800 , 900 , 200];
+// let point2 =0;
+
+// for(let i =0; i < buy.length; i++){
+//     if( point >= buy[i]){
+//         point2 =0;
+//         point -= buy[i];
+//         point2 = buy[i]*0.1;
+//         point += point2;
+//         total2 = total2 -buy[i] ;
+//         console.log(total2);
+//     }else{
+//         point2 = 0;
+//         total2 -= buy[i];
+//         point2 =  buy[i]* 0.1;
+//         point += point2;
+//         total2 = total2+point;
+//         console.log(total2);
+//     }
+// }
