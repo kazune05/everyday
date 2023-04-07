@@ -146,3 +146,13 @@ for(let i =0; i < buy.length; i++){
 //         console.log(total2);
 //     }
 // }
+
+//0407
+// アロー関数
+//時間を分に直す（10時間5分）
+const time = (hour,minute)=>{
+    return hour*60 + minute;
+};
+const result = time(10,5);
+
+console.log(`${result}分`);
