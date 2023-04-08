@@ -156,3 +156,27 @@ const time = (hour,minute)=>{
 const result = time(10,5);
 
 console.log(`${result}分`);
+
+//0408
+//.push characterに追加する
+const character = ["kana","toya","riri"];
+character.push("roko");
+console.log(character);
+
+//forEach
+character.forEach((character2)=>{
+    console.log(character2);
+});
+
+//find
+const characters = [
+    {id:1, name:"kana"},
+    {id:2, name:"toya"},
+    {id:3, name:"riri"},
+    {id:4, name:"roko"}
+];
+
+const findchara = characters.find((chara)=>{
+    return chara.id ===2;
+});
+console.log(findchara);
