@@ -223,3 +223,8 @@ console.log(str4);
 const foods = ["Omelette rice","curry","stew"];
 foods.sort();
 console.log(foods);
+
+//指定した文字に置き換え
+let str5 = "nana";
+let result2 = str5.replace("n" ,"N").replace("a" ,"i");
+console.log(result2);
