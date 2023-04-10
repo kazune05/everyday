@@ -180,3 +180,46 @@ const findchara = characters.find((chara)=>{
     return chara.id ===2;
 });
 console.log(findchara);
+
+//0409
+//filter,map
+const characters2 = [
+    {id:1, firstname:"Kana", lastname:"Suzuki", age:20},
+    {id:2, firstname:"Toya", lastname:"Hujii",age:18},
+    {id:3, firstname:"Riri", lastname:"Nakamura",age:19},
+    {id:4, firstname:"Roko", lastname:"Matsuda",age:17}
+];
+
+const filterchara = characters2.filter((chara2) =>{
+    return chara2.age >=19;
+});
+console.log(filterchara);
+
+const fullname = characters2.map((name2)=>{
+    return name2.firstname +" "+ name2.lastname;
+});
+console.log(fullname);
+
+//0410
+//Date
+// 月はそのままだと-1月になる
+const today = new Date ();
+console.log(
+    today.getFullYear() + "年" + 
+    (today.getMonth()+1) + "月" +
+    today.getDate() + "日"
+);
+
+//逆順 reverse
+const arr2 = [50000,1,255,635];
+arr2.reverse();
+
+//join
+//逆順した配列が文字列として出力
+const str4 =arr2.join(" ");
+console.log(str4);
+
+//アルファベット順
+const foods = ["Omelette rice","curry","stew"];
+foods.sort();
+console.log(foods);
