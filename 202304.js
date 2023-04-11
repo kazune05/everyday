@@ -228,3 +228,15 @@ console.log(foods);
 let str5 = "nana";
 let result2 = str5.replace("n" ,"N").replace("a" ,"i");
 console.log(result2);
+
+//0411
+//正規表現
+const date ="2023年4月11日";
+const result3 = date.match(/[0-9]+/g);
+console.log(result3);
+
+//isの部分をatに置き換える
+const message = "This photo is very beautiful.";
+const result4 = message.replace(/is/g,"at");
+console.log(result4);
+
