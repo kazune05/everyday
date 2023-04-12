@@ -240,3 +240,16 @@ const message = "This photo is very beautiful.";
 const result4 = message.replace(/is/g,"at");
 console.log(result4);
 
+//0412
+//確認用ダイアログ
+//ボタンをクリックすることで確認ダイアログが表示
+function check(){
+    const result5 = confirm("確認用メッセージ");
+    if (result5) {
+        console.log("OK!");
+    }else{
+        console.log("キャンセル");
+    }
+};
+//html側
+//<button onclick ="check();">クリック</button>
