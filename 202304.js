@@ -253,3 +253,26 @@ function check(){
 };
 //html側
 //<button onclick ="check();">クリック</button>
+
+//0413
+//form check()をする
+function inputcheck(){
+    if(document.signup.lastname.value == ""){
+        alert("姓を入力してください");
+    }else if(document.signup.firstname.value == ""){
+        alert("名を入力してください");
+    }else{
+        document.signup.submit();
+    }
+}
+
+let form = document.getElementsByClassName("signup");
+
+let lastname = form.element["lastname"];
+let lname = lastname.value;
+let firstname = form.element["firstname"];
+let fname = firstname.value;
+
+//form.onsubmit = function(e){
+    
+//}
