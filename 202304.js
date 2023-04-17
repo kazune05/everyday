@@ -46,14 +46,14 @@ for(const key in favorite){
 
 //円の面積
 //半径:radius 100のとき 面積:area
-function circle(radius){
-    return radius * radius * 3.14;
-}
-function circlearea(){
-    area = circle(100);
-    return area;
-}
-console.log(circlearea()+ "cm^2");
+// function circle(radius){
+//     return radius * radius * 3.14;
+// }
+// function circlearea(){
+//     area = circle(100);
+//     return area;
+// }
+// console.log(circlearea()+ "cm^2");
 
 //コンソールに"ABC"を表示
 func("ABC");
@@ -266,13 +266,26 @@ function inputcheck(){
     }
 }
 
-let form = document.getElementsByClassName("signup");
+// let form = document.getElementsByClassName("signup");
 
-let lastname = form.element["lastname"];
-let lname = lastname.value;
-let firstname = form.element["firstname"];
-let fname = firstname.value;
+// let lastname = form.element["lastname"];
+// let lname = lastname.value;
+// let firstname = form.element["firstname"];
+// let fname = firstname.value;
 
 //form.onsubmit = function(e){
     
 //}
+
+//0415-16 ハッカソンに参加
+
+//0417
+//ラジオボタンで表示を切り替え
+function student(){
+    document.getElementById("student_area").className ="active";
+    document.getElementById("teacher_area").className="passive";
+};
+function teacher(){
+    document.getElementById("student_area").className ="passive";
+    document.getElementById("teacher_area").className="active";
+};
