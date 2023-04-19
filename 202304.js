@@ -289,3 +289,12 @@ function teacher(){
     document.getElementById("student_area").className ="passive";
     document.getElementById("teacher_area").className="active";
 };
+
+//0419
+function showimage(){
+    const htmlstr ="";
+    for(let i=1; i<=3; i++){
+        htmlstr += "img src='images/frog"+i+".'jpg'>";
+    }
+    document.getElementById("imagearea").innerHTML= htmlstr;
+}
