@@ -291,10 +291,10 @@ function teacher(){
 };
 
 //0419
-function showimage(){
-    const htmlstr ="";
-    for(let i=1; i<=3; i++){
-        htmlstr += "img src='images/frog"+i+".'jpg'>";
-    }
-    document.getElementById("imagearea").innerHTML= htmlstr;
-}
+// function showimage(){
+//     const htmlstr ="";
+//     for(let i=1; i<=3; i++){
+//         htmlstr += "img src='images/frog"+i+".'jpg'>";
+//     }
+//     document.getElementById("imagearea").innerHTML= htmlstr;
+// }
