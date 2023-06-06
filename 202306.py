@@ -27,3 +27,14 @@ print(str(s))
 input_line = int(input())
 result = 222 - input_line
 print(str(result))
+
+#0606:D120:鉛筆の数
+input_line = input()
+print(int(input_line)*12)
+
+#D189:何周年の確認
+x=int(input())
+y=int(input())
+
+s=y - x
+print(s)
