@@ -38,3 +38,8 @@ y=int(input())
 
 s=y - x
 print(s)
+
+#0607:D146:単語の省略
+v = ['a','i','u','e','o']
+s = input()
+print("".join([x for x in s if x not in v]))
