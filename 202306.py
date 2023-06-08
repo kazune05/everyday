@@ -43,3 +43,14 @@ print(s)
 v = ['a','i','u','e','o']
 s = input()
 print("".join([x for x in s if x not in v]))
+
+#0608:D172:イヴの日付
+input_line = int(input())
+print(input_line-1)
+
+#C020:残り物の量
+s = input()
+m, p, q= s.split(" ")
+rest = int(m) - (int(m) * (int(p) / 100))
+rost = rest - (rest * (int(q) / 100))
+print(rost)
