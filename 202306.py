@@ -52,5 +52,11 @@ print(input_line-1)
 s = input()
 m, p, q= s.split(" ")
 rest = int(m) - (int(m) * (int(p) / 100))
-rost = rest - (rest * (int(q) / 100))
-print(rost)
+left = rest - (rest * (int(q) / 100))
+print(left)
+
+#0609:D080:忘年会の予算
+s = input()
+n,m = s.split(" ")
+total = (int(n) * 6000) + (int(m) * 4000)
+print(total)
