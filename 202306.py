@@ -60,3 +60,11 @@ s = input()
 n,m = s.split(" ")
 total = (int(n) * 6000) + (int(m) * 4000)
 print(total)
+
+#0610:D068:雨と晴れの記録
+n = input()
+s = input()
+
+S_count=s.count('S')
+R_count=s.count('R')
+print(str(S_count) + " " + str(R_count))
