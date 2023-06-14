@@ -68,3 +68,11 @@ s = input()
 S_count=s.count('S')
 R_count=s.count('R')
 print(str(S_count) + " " + str(R_count))
+
+#0614:D095:ジュースの分配
+import math
+n = int(input())
+m = int(input())
+result = n / m
+s = math.floor(result)
+print(s)
